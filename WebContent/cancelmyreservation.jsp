@@ -1,0 +1,124 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style>
+table#t01 {
+  border: 0.1px solid black;  
+  align: "CENTER";
+}
+table#t01 tr:nth-child(even) {
+  border: 0.1px solid black; 
+  align: "CENTER";
+  background-color: #AED6F1;
+}
+table#t01 tr:nth-child(odd) {
+  border: 0.1px solid black; 
+  align: "CENTER";
+  background-color: #EBF5FB;
+}
+table#t01 th {
+  color: black;
+  align: "CENTER";
+  border: 0.1px solid black;
+  background-color: #EBF5FB;
+}
+
+.tabcontent {
+  padding: 6px 12px;
+}
+
+input#ip01 {
+	border: none;
+	border-color: transparent;
+ }
+ 
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Update or Delete My Reservation</title>
+</head>
+<body>
+<table>
+<tr>
+ 
+<td class="tabcontent"><a href=stuFacHomePageController>Back</a></td> 
+<td><a href="LogoutController">Logout</a></td>
+				 </tr></table>
+<h1>Cancel my reservation</h1>
+
+<c:if test="${empty reservationsforcancellationlist}">
+<input name="AlertMsg" id="AlertMsg" value="<c:out value='Sorry! None of your reservations are eligible for cancellation.'/>" type="text" style ="background-color: white; color: red; border: none; width:800px" disabled="disabled">
+</c:if>
+
+<c:if test = "${!empty reservationsforcancellationlist}">
+	
+<form action="confirmmodifyreservation.jsp" name="table_form" id="table_form">
+
+<table class="myTable" id="t01"> 
+		<tr class="myTableRow" align="CENTER">		
+				
+			<th>Reservation id </th>
+			<th>Parking Area </th>
+			<th>Parking Type </th>
+			<th>Floor </th>
+			<th>Reservation Date </th>
+			<th>From time </th>
+			<th>To time </th>
+			<th>Parking Slot Number </th>
+			<th>Cart </th>
+			<th>Camera </th>
+			<th>History </th>
+			<th>Select </th>
+			<th style="border:none"></th>
+		</tr>
+		
+		
+ 		<c:forEach items="${reservationsforcancellationlist}" var="item" varStatus="status">
+ 		
+ 		
+ 			<input type="text" name="reservationid" id="reservationid" style="display:none" value="<c:out value="${item.getReservation_id()}" />" >
+			<input type="text" name="username" id="username" style="display:none" value="<c:out value="${item.getUsername()}" />" >
+			<input type="text" name="parkingid" id="parkingid" style="display:none" value="<c:out value="${item.getParkingarea_id()}" />" > 		
+			<tr class="myTableRow">			
+			<td class="myTableCell" style="width: 145px;" align=CENTER >
+					<c:out value="${item.getReservation_id()}" />
+				</td>			
+			<td class="myTableCell" id="td1" style="width: 104px; " align=CENTER ><c:out value="${item.getParkingarea_name()}" /></td>
+			<td class="myTableCell" id="td2" style="width: 130px; " align=CENTER ><c:out value="${item.getParkingtype()}" /></td>
+			<td class="myTableCell" id="td3" style="width: 63px; " align=CENTER ><c:out value="${item.getFloor()}" /></td>
+			<td class="myTableCell" id="td4" style="width: 63px; " align=CENTER ><c:out value="${item.getReservation_date()}" /></td>
+			<td class="myTableCell" id="td5" style="width: 104px; " align=CENTER ><c:out value="${item.getFrom_time()}" /></td>
+			<td class="myTableCell" id="td6" style="width: 130px; " align=CENTER ><c:out value="${item.getTo_time()}" /></td>
+			<td class="myTableCell" id="td7" style="width: 63px; " align=CENTER ><c:out value="${item.getParkingslot_no()}" /></td>
+			<td class="myTableCell" id="td8" style="width: 63px; " align=CENTER ><c:out value="${item.getCart()}" /></td>
+			<td class="myTableCell" id="td9" style="width: 130px; " align=CENTER ><c:out value="${item.getCamera()}" /></td>
+			<td class="myTableCell" id="td10" style="width: 63px; " align=CENTER ><c:out value="${item.getHistory()}" /></td>
+			<td> <input type="radio" id="radioButton" name="radioButton" value="${status.count}" onclick="check();">
+				</td>
+			</tr>
+		</c:forEach>	
+</table>
+	<br/>
+	<input type="submit" name="modifyButton" id="modifyButton" value="Proceed to Modify or Delete" style="margin-left: 285px;" disabled="disabled" ></input>	
+</form>
+</c:if>
+<script>
+ function check()
+ {
+ var ele = document.getElementsByName('radioButton');
+ var flag=0;
+ for(var i=0;i<ele.length;i++)
+ {
+     if(ele[i].checked)
+      flag=1;
+
+ } 
+ if(flag==1){
+ 	document.getElementById('modifyButton').disabled=false;
+ }
+ }
+ </script>
+</body>
+</html>
