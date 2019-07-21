@@ -1,0 +1,4 @@
+1,West Garage,Basic,,Enter spot number,Empty spot number
+2,West Garage,Basic,abc,Spot number should be an integer.,Spot number containing character
+3,West Garage,Basic,12@,Spot number should be an integer.,Spot number containing special character
+3,West Garage,Basic,2,,Correct spot number

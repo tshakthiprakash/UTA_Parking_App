@@ -1,0 +1,6 @@
+1,,Parking Area Name should not be empty
+2,NewParkingName1,Parking area name cannot contain special characters or numeric characters
+3,NewParkingName!,Parking area name cannot contain special characters or numeric characters
+4,ne,Parking Area name should be between 3 and 16 characters in length
+5,NewParkingNameNewParkingNameNewParkingName,Parking Area name should be between 3 and 16 characters in length
+6,Nedderman,Parking Area Name alredy found

@@ -1,0 +1,4 @@
+1,Select,Select,Please correct the following,Please select a parking area,Please select a parking type,No input selected for parking area and parking type
+2,Maverick,Select,Please correct the following,,Please select a parking type,parking type not selected
+3,Maverick,Basic,,,,success case
+4,Select,Basic,Please correct the following,Please select a parking area,,parking area not selected

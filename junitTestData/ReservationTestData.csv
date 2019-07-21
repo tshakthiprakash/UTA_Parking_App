@@ -1,0 +1,36 @@
+1,,,12:00,Please correct the following errors,Please enter reservation start time,Please enter reservation end time,Empty reservationFrom and reservationTo time
+2,13:00,,12:00,Please correct the following errors,,Please enter reservation end time,Empty reservationFrom time 
+3,,13:00,12:00,Please correct the following errors,Please enter reservation start time,,Empty reservationTo time 
+4,01:01,03:03,12:00,Please correct the following errors,Please enter start time in format HH:00. HH from_time 00 to_time 23,Please enter time in the format HH:mm. Valid values for mm are 00 or 15 or 30 or 45,reservationFrom time minutes other than 00 and reservationTo time minutes is not 15 or 30 or 45 or 00
+5,08:00,09:00,08:05,Please correct the following errors,Start time cannot be earlier than current time. Please correct it,,reservationFrom time before cuttent time
+6,12:00,10:00,11:00,Please correct the following errors,,End time cannot be earlier than current time. Please correct it,reservationTo time before currentTime and reservationFrom time
+7,08:00,11:18,07:00,Please correct the following errors,,Please enter time in the format HH:mm. Valid values for mm are 00 or 15 or 30 or 45,reseration is for more than three hours in terms if minutes
+8,11:00,11:15,11:30,Please correct the following errors,Start time cannot be earlier than current time. Please correct it,End time cannot be earlier than current time. Please correct it,Both reservationFrom and reservationTo before currentTime
+9,08:00,07:00,06:00,Please correct the following errors,,End time cannot be earlier than from_time time. Please correct it,reservationTo time is before reservationFrom time but greater than currentTime
+10,08:15,09:00,07:00,Please correct the following errors,Please enter start time in format HH:00. HH from_time 00 to_time 23,,Only reservationFrom time minutes other than 00
+11,08:00,11:00,09:00,Please correct the following errors,Start time cannot be earlier than current time. Please correct it,,Only reservationFrom time less than currentTime
+12,1,4,09:00,Please correct the following errors,Please enter time in the format HH:mm,Please enter time in the format HH:mm,reservationFrom and reservationTo time with Integer that is not in time format
+13,25:00,26:00,18:00,Please correct the following errors,Please enter start time in format HH:00. HH from_time 00 to_time 23,Please enter time in format HH:mm. HH from_time 00 to_time 23,reservationFrom and reservationTo time for hours greater than 24:00
+14,23:00,23:50,23:30,Please correct the following errors,Start time cannot be earlier than current time. Please correct it,Please enter time in format HH:mm. Valid values for mm are 00 or 15 or 30 or 45,reservationFrom and reservationTo time less than 24:00 to test bounday values on reservation timings
+15,09:00,09:00,09:00,Please correct the following errors,,Reservation cannot be made for less than 15 minutes. Please correct it,Equal reserfvationFrom time and reservationTo time and currentTime
+16,09:00,10:00,10:00,Please correct the following errors,Start time cannot be earlier than current time. Please correct it,,reseravtionFrom is less than currentTime and reservationTo time is equal to currentTime
+17,09:00,10:00,09:00,,,,reseravtionFrom time is equal to currentTime and reservationTo time is greater than currentTime
+18,08:00,12:00,07:00,Please correct the following errors,,Reservation cannot be made for more than 3 hours. Please correct it,reservation for greater than 3 hours in terms of hours
+19,14:234,16:454,09:00,Please correct the following errors,Please enter time in the format HH:mm,Please enter time in the format HH:mm,invalid minutes in reservationFrom and reservationTo times
+20,14:00,16:454,09:00,Please correct the following errors,,Please enter time in the format HH:mm,invalid minutes in reservationTo time only
+21,14:453,16:15,09:00,Please correct the following errors,Please enter time in the format HH:mm,,invalid minutes in reservationFrom time only
+22,pa:tr,ur:ee,09:00,Please correct the following errors,Please enter time in format HH:mm,Please enter time in format HH:mm,string input for reservationFrom and reservationTom times
+23,14:00,17:15,09:00,Please correct the following errors,,Reservation cannot be made for more than 3 hours. Please correct it,reservation is for 15 minutes more than 3 hours
+24,14:00,17:00,09:00,,,,reservation for exactly 3 hours
+25,23:00,23:50,09:00,Please correct the following errors,,Please enter time in format HH:mm. Valid values for mm are 00 or 15 or 30 or 45,reservation for less than 1 hour and greater than 45 minutes but not in multiples of 15
+26,23:00,23:35,09:00,Please correct the following errors,,Please enter time in the format HH:mm. Valid values for mm are 00 or 15 or 30 or 45,reservation for less than 1 hour and greater than 30 and less than 45 minutes but not in multiples of 15
+27,23:00,23:45,09:00,,,,reservation for extactly for 45 minutes
+28,23:00,23:30,09:00,,,,reservation for exactly for 30 minutes
+29,238:00,23:30,09:00,Please correct the following errors,Please enter time in the format HH:mm,,invalid reservationFrom hours 
+30,pa:ta,23:30,09:00,Please correct the following errors,Please enter time in format HH:mm,,reservationFrom with input String and reservationTo with input time
+31,23:00,ta:ra,09:00,Please correct the following errors,,Please enter time in format HH:mm,reservationTo with input String and reservationTo with input time
+32,23:00,22:300,09:00,Please correct the following errors,,Please enter time in the format HH:mm,invalid reservationFrom hours 
+33,08:59,10:00,09:00,Please correct the following errors,Please enter start time in format HH:00. HH from_time 00 to_time 23,,Boundary condition test on reservationFrom time
+34,08:61,10:00,09:00,Please correct the following errors,Please enter start time in format HH:00. HH from_time 00 to_time 23,,Boundary condition test on reservationFrom time
+35,10:00,10:59,09:00,Please correct the following errors,,Please enter time in the format HH:mm. Valid values for mm are 00 or 15 or 30 or 45,Boundary condition test on reservationTo time
+36,10:00,11:61,09:00,Please correct the following errors,,Please enter time in the format HH:mm. Valid values for mm are 00 or 15 or 30 or 45,Boundary condition test on reservationTo time

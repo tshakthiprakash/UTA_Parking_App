@@ -1,0 +1,7 @@
+1,Maverick,Select,,,Please correct the following,,Please select a parking type,Please enter reservation start time,Please enter reservation end time
+2,Maverick,Basic,02:01,03:03,Please correct the following errors,,,Please enter start time in format HH:00. HH from_time 00 to_time 23,Please enter time in the format HH:mm. Valid values for mm are 00 or 15 or 30 or 45
+3,Maverick,Basic,-01:00,01:00,Please correct the following errors,,,Start time cannot be earlier than current time. Please correct it,
+4,Maverick,Basic,03:00,02:00,Please correct the following errors,,,,End time cannot be earlier than from_time time. Please correct it
+5,Maverick,Basic,03:00,03:00,Please correct the following errors,,,,Reservation cannot be made for less than 15 minutes. Please correct it
+6,Maverick,Basic,01:00,05:00,Please correct the following errors,,,,Reservation cannot be made for more than 3 hours. Please correct it
+7,Maverick,Basic,02:00,03:00,,,,,

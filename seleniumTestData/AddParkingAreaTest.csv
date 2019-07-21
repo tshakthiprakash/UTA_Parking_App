@@ -1,0 +1,10 @@
+1,,,,,Parking Area Name should not be empty,Please Enter a valid Floor number,Please Enter a valid Capacity
+2,sh,,,,Parking Area name should be between 3 and 16 characters in length,Please Enter a valid Floor number,Please Enter a valid Capacity
+3,sssssssssssssssssss,,,,Parking Area name should be between 3 and 16 characters in length,Please Enter a valid Floor number,Please Enter a valid Capacity
+4,NewTestParking!,,,,Parking area name cannot contain special characters or numeric characters,Please Enter a valid Floor number,Please Enter a valid Capacity
+5,NewTestParking1,,,,Parking area name cannot contain special characters or numeric characters,Please Enter a valid Floor number,Please Enter a valid Capacity
+6,NewTestParking,a,,,,Please Enter a valid Floor number,Please Enter a valid Capacity
+7,NewTestParking,1,,,,,Please Enter a valid Capacity
+8,NewTestParking,1,a,,,,Please Enter a valid Capacity
+9,Nedderman,1,280,Basic,Parking Area Name alredy found,,
+10,NewTestParking,2,280,Basic,,,

@@ -1,0 +1,23 @@
+1,West Garage,Basic,,,12:00,Please correct the following errors,Please enter start time,Please enter end time,Empty start and end time
+2,West Garage,Basic,13:00,,12:00,Please correct the following errors,,Please enter end time,Empty end time
+3,West Garage,Basic,,13:00,12:00,Please correct the following errors,Please enter start time,,Empty start time
+4,West Garage,Basic,11:00,11:15,11:30,Please correct the following errors,Start time cannot be earlier than current time,End time cannot be earlier than current time,Start and end time before current time
+5,West Garage,Basic,11:00,12:30,12:00,Please correct the following errors,Start time cannot be earlier than current time,,Start time earlier than current time and end time later than current time
+6,West Garage,Basic,12:00,12:30,12:00,,,,Start time equal to current time and end time later than current time
+7,West Garage,Basic,12:30,11:30,12:00,Please correct the following errors,,End time cannot be earlier than current time,End time earlier than current time
+8,West Garage,Basic,11:00,10:30,10:00,Please correct the following errors,,End time cannot be earlier than start time,End time earlier than start time but later than current time
+9,West Garage,Basic,1,4,12:00,Please correct the following errors,Please enter time in the format HH:mm,Please enter time in the format HH:mm,Start time and end time with integer and not in time format
+10,West Garage,Basic,25:00,26:00,18:00,Please correct the following errors,Please enter start time in format HH:mm. Valid values for HH are 00 to 23,Please enter end time in format HH:mm. Valid values for HH are 00 to 23,Start and End time for hours greater than 24 hours
+11,West Garage,Basic,23:30,23:50,23:00,,,,Start and end time for hours lesser than 24 hours
+12,West Garage,Basic,10:00,10:00,09:00,Please correct the following errors,,End time cannot be same as start time,Same start and end time
+13,West Garage,Basic,10:00,10:00,10:00,Please correct the following errors,,End time cannot be same as start time,Same start and end time
+14,West Garage,Basic,14:234,16:454,09:00,Please correct the following errors,Please enter time in the format HH:mm,Please enter time in the format HH:mm,Inavlid minutes in start and end time
+15,West Garage,Basic,14:00,16:454,09:00,Please correct the following errors,,Please enter time in the format HH:mm,invalid minutes in end time only
+16,West Garage,Basic,14:453,16:15,09:00,Please correct the following errors,Please enter time in the format HH:mm,,invalid minutes in start time only
+17,West Garage,Basic,11:60,12:99,10:00,Please correct the following errors,Please enter start time in format HH:mm. Valid values for mm are 00 to 59,Please enter end time in the format HH:mm. Valid values for mm are 00 to 59,Start and end time with minutes greater than 59(BV)
+18,West Garage,Basic,11:61,12:59,10:00,Please correct the following errors,Please enter start time in format HH:mm. Valid values for mm are 00 to 59,,Start time with minutes greater than 59 and end time with minutes equal to 59(BV)
+19,West Garage,Basic,pa:tr,ur:ee,09:00,Please correct the following errors,Please enter time in format HH:mm,Please enter time in format HH:mm,String inputs for start and end time
+20,West Garage,Basic,238:00,23:30,09:00,Please correct the following errors,Please enter time in the format HH:mm,End time cannot be earlier than start time,Inavlid hours in start time
+21,West Garage,Basic,23:20,234:45,10:00,Please correct the following errors,,Please enter time in the format HH:mm,Invalid hours in to time
+22,West Garage,Basic,pa:ta,23:30,09:00,Please correct the following errors,Please enter time in format HH:mm,,String input for start time and time input for end time
+23,West Garage,Basic,23:00,ta:ra,09:00,Please correct the following errors,,Please enter time in format HH:mm,String input for end time and time input for start time

@@ -1,0 +1,13 @@
+1,West Garage,,,Basic,Please enter start time,Please enter end time
+2,West Garage,2:5,2:5,Basic,Please enter time in the format HH:mm,Please enter time in the format HH:mm
+3,West Garage,abc,abc,Basic,Please enter time in the format HH:mm,Please enter time in the format HH:mm
+4,West Garage,24:00,22:00,Basic,Please enter start time in format HH:mm. Valid values for HH are 00 to 23,End time cannot be earlier than start time
+5,West Garage,23:60,22:00,Basic,Please enter start time in format HH:mm. Valid values for mm are 00 to 59,End time cannot be earlier than start time
+6,West Garage,22:00,24:00,Basic,,Please enter end time in format HH:mm. Valid values for HH are 00 to 23
+7,West Garage,22:00,22:60,Basic,,Please enter end time in the format HH:mm. Valid values for mm are 00 to 59
+8,West Garage,00:00,22:00,Basic,Start time cannot be earlier than current time,
+9,West Garage,00:02,22:00,Basic,Start time cannot be earlier than current time,
+10,West Garage,00:01,00:15,Basic,Start time cannot be earlier than current time,End time cannot be earlier than current time
+11,West Garage,00:02,00:16,Basic,Start time cannot be earlier than current time,End time cannot be earlier than current time
+12,West Garage,23:00,22:00,Basic,,End time cannot be earlier than start time
+13,West Garage,23:00,23:00,Basic,,End time cannot be same as start time
